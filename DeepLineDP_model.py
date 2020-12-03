@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 
 # Model structure
-class HierarchicalAttentionNetwork(nn.Module):
+class DeepLineDP(nn.Module):
     def __init__(self, num_classes, vocab_size, embed_dim, word_gru_hidden_dim, sent_gru_hidden_dim,
                 word_gru_num_layers, sent_gru_num_layers, word_att_dim, sent_att_dim, use_layer_norm, dropout):
         """
